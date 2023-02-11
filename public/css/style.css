@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    font-family: sans-serif;
+}
+header {
+    background: #e3e3e3;
+    padding: 2em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 5.1em);
+    gap: 2em;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    margin-bottom: 4em;
+}
+th{
+    background: #333;
+    color: #e3e3e3;
+    padding-block: 1em;
+}
+td{
+    text-align: center;
+    padding-block: 1em;
+
+}
+tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+tr:nth-child(even) {
+    /* background: grey; */
+}
+.not-found{
+    padding: 1em 5em;
+    background: rgba(255, 0, 0, 0.425);
+    border:1px rgb(158, 0, 0) solid;
+    color: rgb(158, 0, 0);
+}
+/* .absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+input {
+    outline: none;
+    border: 1px solid;
+    padding: .4em ;
+    border-radius: 3px;
+}
+.absolute button, input[type=submit]{
+    padding: 0.8em 3em;
+    background: rgb(52, 38, 243);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+fieldset{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 2em 0;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 244, 244);
+    border-radius: 3px;
+}
+input:not(input[type=submit]){
+    margin-top: 0.4em;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    width: 270px;
+    padding: .5em;
+    /* width: 100%; */
+}
+
+.error{
+    color: rgba(255, 0, 0, 0.685);
+    font-size: 12px;
+}
